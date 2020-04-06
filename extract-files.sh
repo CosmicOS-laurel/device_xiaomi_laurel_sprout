@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=cepheus
+DEVICE=laurel_sprout
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -16,7 +16,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 AOSP_ROOT="$MY_DIR"/../../..
 
-HELPER="$AOSP_ROOT"/vendor/aosp/build/tools/extract_utils.sh
+HELPER="$AOSP_ROOT"/vendor/cos/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
