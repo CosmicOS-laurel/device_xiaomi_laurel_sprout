@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Cosmic-OS stuff.
-$(call inherit-product, vendor/qcom/common/common.mk)
+$(call inherit-product, device/qcom/common/common.mk)
 $(call inherit-product, vendor/cos/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
